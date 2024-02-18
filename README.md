@@ -3,12 +3,11 @@
 ## Este projeto faz parte de um processo seletivo da empresa Fasters o qual recebi o desafio de construir uma aplicação web que permite aos usuários criar e gerenciar personagens para um jogo de RPG fictício chamado "Warrior's".
 
 ### Este é um projeto desenvolvido utilizando HTML, CSS e JavaScript. O sistema inclui as seguintes funcionalidades:
-- Cadastro de usuário com validação de idade e confirmação de senha
-- Armazenamento dos dados de cadastro no localStorage do navegador, para persistir as informações do login criado
-- Login com verificação de email e senha
-- Limite de tentativas de login antes do fechamento do jogo
-- Seleção de classe e montaria com exibição de informações específicas
-- Início do jogo após a seleção de classe e montaria
+- *Cadastro de usuário com validação de idade e confirmação de senha*
+- *Armazenamento dos dados de cadastro no localStorage do navegador, para persistir as informações do login criado*
+- *Login com verificação de email e senha*
+- *Limite de tentativas de login antes do fechamento do jogo*
+- *Seleção de Personagem, classe, características e montaria com exibição de informações específicas*
 
 ### Este projeto aplica diversas teorias e conceitos de programação, incluindo:
 
