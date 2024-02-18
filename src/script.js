@@ -147,5 +147,5 @@ function mostrarInformacoesPersonagem()  {
 
 function iniciarJogo() {
     // Lógica para iniciar o jogo...
-    alert("O jogo está iniciando!");
+    alert("O jogo será iniciando!");
 }
