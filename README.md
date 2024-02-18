@@ -24,7 +24,7 @@
 
 ###  LINK DO PROJETO:
 ### https://euagnes.github.io/Netuno-RPG/
-
+imagem do jogo
 
 ## ScreenShot
-[![imagem do jogo](https://i.ibb.co/gMWHr3H/Warrior-s.png)
+(https://i.ibb.co/gMWHr3H/Warrior-s.png)
