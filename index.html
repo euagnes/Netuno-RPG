@@ -8,116 +8,113 @@
         <meta name="description" content="Netuno é um emocionante jogo de RPG onde você pode montar seu próprio personagem e embarcar em incríveis aventuras. Explore um mundo fantástico, lute contra inimigos poderosos e torne-se uma lenda!">
         <meta name="keywords" content="Netuno, RPG, montar personagem, jogo, aventura, personagem, mundo fantástico">
         <meta name="author" content="Agnes Samira Duque">
-        <link rel="icon" type="image/png" href="icone-netuno.png">
-    </head>
-    <body>   
+        <link rel="icon" type="image/png" href="icone-netuno.png"> 
         <div class="cabecalho">
             <h1>Seja bem-vindo ao jogo Warrior's!</h1>
         </div>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Desafio Netuno</title>
+    </head>
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Desafio Netuno</title>
-</head>
+    <body>
 
-<body>
+        <div id="cadastro" class="container">
+                <h2>Cadastro</h2>
+                <form id="cadastroForm">
+                    <label for="nome">Nome completo:</label>
+                    <input type="text" id="nome" required><br><br>
 
-    <div id="cadastro" class="container">
-            <h2>Cadastro</h2>
-            <form id="cadastroForm">
-                <label for="nome">Nome completo:</label>
-                <input type="text" id="nome" required><br><br>
+                    <label for="dataNascimento">Data de Nascimento:</label>
+                    <input type="date" id="dataNascimento" required><br><br>
 
-                <label for="dataNascimento">Data de Nascimento:</label>
-                <input type="date" id="dataNascimento" required><br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required><br><br>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" required><br><br>
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" required><br><br>
 
-                <label for="senha">Senha:</label>
-                <input type="password" id="senha" required><br><br>
+                    <label for="confirmarSenha">Confirmar Senha:</label>
+                    <input type="password" id="confirmarSenha" required><br><br>
 
-                <label for="confirmarSenha">Confirmar Senha:</label>
-                <input type="password" id="confirmarSenha" required><br><br>
+                    <button type="submit">Cadastrar</button>
+                    <p>Já tem uma conta? <a href="#" onclick="mostrarLogin()">Faça login aqui.</a></p>
+                </form>
+        </div>
 
-                <button type="submit">Cadastrar</button>
-                <p>Já tem uma conta? <a href="#" onclick="mostrarLogin()">Faça login aqui.</a></p>
+        <div id="login" class="container" style="display: none;">
+                <h2>Login</h2>
+                <form id="loginForm">
+                    <label for="emailLogin">Email:</label>
+                    <input type="email" id="emailLogin" required><br><br>
+                    <label for="senhaLogin">Senha:</label>
+                    <input type="password" id="senhaLogin" required><br><br>
+                    <button type="submit">Login</button>
+                </form>
+        </div>
+
+        <div class="container", id="criacaopersonagem" style="display: none;">
+            <h2>Criação de Personagem</h2>
+
+            <h3> Escolha sua Classe:</h3>
+            <form id="classeForm">
+                <label for="classe">Classe:</label>
+                <select id="classe" name="classe">
+                    <option value="Paladino">Paladino</option>
+                    <option value="Atirador">Atirador</option>
+                    <option value="Guerreiro">Guerreiro</option>
+                    <option value="Bárbaro">Bárbaro</option>
+                    <option value="Arqueiro">Arqueiro</option>
+                </select>
             </form>
-    </div>
-
-    <div id="login" class="container" style="display: none;">
-            <h2>Login</h2>
-            <form id="loginForm">
-                <label for="emailLogin">Email:</label>
-                <input type="email" id="emailLogin" required><br><br>
-                <label for="senhaLogin">Senha:</label>
-                <input type="password" id="senhaLogin" required><br><br>
-                <button type="submit">Login</button>
+            
+            
+            
+            <h3> Escolha a Cor do Personagem:</h3>
+            <form id="corPersonagemForm">
+                <label for="corPersonagem">Cor do Personagem:</label>
+                <input type="color" id="corPersonagem" name="corPersonagem">
             </form>
-    </div>
 
-    <div class="container", id="criacaopersonagem" style="display: none;">
-        <h2>Criação de Personagem</h2>
+            <h3> Escolha a Cor do Cabelo:</h3>
+            <form id="corCabeloForm">
+                <label for="corCabelo">Cor do Cabelo:</label>
+                <input type="color" id="corCabelo" name="corCabelo">
+            </form>
 
-        <h3> Escolha sua Classe:</h3>
-        <form id="classeForm">
-            <label for="classe">Classe:</label>
-            <select id="classe" name="classe">
-                <option value="Paladino">Paladino</option>
-                <option value="Atirador">Atirador</option>
-                <option value="Guerreiro">Guerreiro</option>
-                <option value="Bárbaro">Bárbaro</option>
-                <option value="Arqueiro">Arqueiro</option>
-            </select>
-        </form>
-        
-        
-        
-        <h3> Escolha a Cor do Personagem:</h3>
-        <form id="corPersonagemForm">
-            <label for="corPersonagem">Cor do Personagem:</label>
-            <input type="color" id="corPersonagem" name="corPersonagem">
-        </form>
+            <h3> Escolha sua Montaria:</h3>
+            <form id="montariaForm">
+                <label for="montaria">Montaria:</label>
+                <select id="montaria" name="montaria">
+                    <option value="Panda">Panda</option>
+                    <option value="Cavalo">Cavalo</option>
+                    <option value="Dragão">Dragão</option>
+                    <option value="Pantera">Pantera</option>
+                    <option value="Lobo">Lobo</option>
+                </select>
+            </form>
 
-        <h3> Escolha a Cor do Cabelo:</h3>
-        <form id="corCabeloForm">
-            <label for="corCabelo">Cor do Cabelo:</label>
-            <input type="color" id="corCabelo" name="corCabelo">
-        </form>
+            <h3> Escolha sua Ferramenta de Batalha:</h3>
+            <form id="Ferramentaform">
+                <label for="FerramentaBatalha">Equipamento:</label>
+                <select id="FerramentaBatalha" name="FerramentaBatalha">
+                    <option value="Marreta">Marreta</option>
+                    <option value="Espada e Escudo">Espada e Escudo</option>
+                    <option value="Arco">Arco</option>
+                    <option value="lança">lança</option>
+                    <option value="Kunai com corrente">Kunai com corrente</option>
+                </select>
+            </form>
+                    
+            <button type="button" onclick="mostrarInformacoesPersonagem()" style="margin-top: 20px;">
+                Mostrar Informações
+            </button>
 
-        <h3> Escolha sua Montaria:</h3>
-        <form id="montariaForm">
-            <label for="montaria">Montaria:</label>
-            <select id="montaria" name="montaria">
-                <option value="Panda">Panda</option>
-                <option value="Cavalo">Cavalo</option>
-                <option value="Dragão">Dragão</option>
-                <option value="Pantera">Pantera</option>
-                <option value="Lobo">Lobo</option>
-            </select>
-        </form>
+            <div id="infoPersonagem"></div>
 
-        <h3> Escolha sua Ferramenta de Batalha:</h3>
-        <form id="Ferramentaform">
-            <label for="FerramentaBatalha">Equipamento:</label>
-            <select id="FerramentaBatalha" name="FerramentaBatalha">
-                <option value="Marreta">Marreta</option>
-                <option value="Espada e Escudo">Espada e Escudo</option>
-                <option value="Arco">Arco</option>
-                <option value="lança">lança</option>
-                <option value="Kunai com corrente">Kunai com corrente</option>
-            </select>
-        </form>
-                
-        <button type="button" onclick="mostrarInformacoesPersonagem()" style="margin-top: 20px;">
-            Mostrar Informações
-        </button>
+            <div style='text-align: center; display: none;' id="iniciarJogo"> <button type='button' onclick='iniciarJogo()'>Iniciar Jogo</button> </div>
 
-        <div id="infoPersonagem"></div>
-
-        <div style='text-align: center; display: none;' id="iniciarJogo"> <button type='button' onclick='iniciarJogo()'>Iniciar Jogo</button> </div>
-
-    </div>
-        <script src="src/script.js"></script>
+        </div>
+            <script src="src/script.js"></script>
     </body>
 </html>

@@ -145,9 +145,6 @@ function mostrarInformacoesPersonagem()  {
     document.getElementById('iniciarJogo').style.display = 'block';
 }
 
-
-
-
 function iniciarJogo() {
     // Lógica para iniciar o jogo...
     alert("O jogo está iniciando!");
