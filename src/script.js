@@ -126,7 +126,7 @@ function mostrarInformacoesPersonagem()  {
     } else if (classe === "Bárbaro") {
         infoPersonagem.innerHTML += "<p>Bárbaro - Vida: 100, Fúria: 50, Brutalidade: 90</p>" ;
     } else if (classe === "Arqueiro") {
-        infoPersonagem.innerHTML += "<p>Arqueiro - Vida: 75, Precisão: 95%, Velocidade de Ataque: 1.75</p>" + "<img src='src/img/arqueiro.jpg' class='img-result'></img>";;
+        infoPersonagem.innerHTML += "<p>Arqueiro - Vida: 75, Precisão: 95%, Velocidade de Ataque: 1.75</p>";
     }
 
     // Informações específicas de cada montaria
