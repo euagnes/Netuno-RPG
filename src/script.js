@@ -6,7 +6,6 @@ function salvarCadastroLocalStorage() {
   localStorage.setItem('cadastroData', JSON.stringify(cadastroData));
 }
 
-//cadastro
 let tentativasLogin = 0;
 
 function mostrarLogin() {
@@ -27,10 +26,9 @@ document.getElementById('cadastroForm').addEventListener('submit', function(even
     return;
   }
 
-  // Verifica se o usuário tem pelo menos 18 anos
   const hoje = new Date();
   const idade = hoje.getFullYear() - dataNascimento.getFullYear();
-  const mesAtual = hoje.getMonth() + 1; // +1 porque os meses são indexados a partir de 0
+  const mesAtual = hoje.getMonth() + 1;
   const diaAtual = hoje.getDate();
   const mesNascimento = dataNascimento.getMonth() + 1;
   const diaNascimento = dataNascimento.getDate();
@@ -40,7 +38,6 @@ document.getElementById('cadastroForm').addEventListener('submit', function(even
     return;
   }
 
-  // Cadastro bem-sucedido
   cadastroData = {
     nome,
     email,
@@ -73,7 +70,6 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
   document.getElementById("classe").value;
 });
 
-//distribuir pontos pra classe
 function distribuirPontosClasse() {
     var classe = document.getElementById("classe").value;
     var vida = document.getElementById("vida").value;
@@ -100,7 +96,7 @@ function distribuirPontosMontaria(){
                               "<p>Tempo para Descanso: " + tempoDescanso + " minutos</p>";
 }
 
-//mostrar informacao do personagem
+
 function mostrarInformacoesPersonagem()  {
     var classe = document.getElementById("classe").value;
     var montaria = document.getElementById("montaria").value;
@@ -116,7 +112,7 @@ function mostrarInformacoesPersonagem()  {
                                "<p style= 'display: flex'>Cor do Cabelo: <span style='background-color:" + corCabelo + "; width: 50px; height: 20px; display:block'></span></p>" +
                                "<p>Ferramenta de Batalha: " + ferramentaBatalha + "</p>" + 
                                "<h3>Atributos da classe e montaria:</h3>"                                                      
-    // Informações específicas de cada classe
+    
     if (classe === "Paladino") {
         infoPersonagem.innerHTML += "<p>Paladino - Vida: 85, Mana: 35, Velocidade de Ataque: 1.25</p>";
     } else if (classe === "Atirador") {
@@ -129,23 +125,21 @@ function mostrarInformacoesPersonagem()  {
         infoPersonagem.innerHTML += "<p>Arqueiro - Vida: 75, Precisão: 95%, Velocidade de Ataque: 1.75</p>";
     }
 
-    // Informações específicas de cada montaria
     if (montaria === "Panda") {
-        infoPersonagem.innerHTML += "<p>Panda - Velocidade: 3m/s, Tempo para descanso: 5 minutos</p>" + "<img src='https://www.georgetown.edu/wp-content/uploads/2023/11/DSC_7947-2000x1125.jpg' class='img-result'></img>";
+        infoPersonagem.innerHTML += "<p>Panda - Velocidade: 3m/s, Tempo para descanso: 5 minutos</p>" + "<img src='https://www.georgetown.edu/wp-content/uploads/2023/11/DSC_7947-2000x1125.jpg' class='img-montaria'></img>";
     } else if (montaria === "Cavalo") {
-        infoPersonagem.innerHTML += "<p>Cavalo - Velocidade: 4m/s, Tempo para descanso: 7 minutos</p>" + "<img src='https://www.eltonbrunetti.com.br/wp-content/uploads/2021/04/Detalhe-2-Quadro-pintura-Cavalo-Frisio-80x100-Elton-Brunetti-jpg.webp' class='img-result'></img>";
+        infoPersonagem.innerHTML += "<p>Cavalo - Velocidade: 4m/s, Tempo para descanso: 7 minutos</p>" + "<img src='https://www.eltonbrunetti.com.br/wp-content/uploads/2021/04/Detalhe-2-Quadro-pintura-Cavalo-Frisio-80x100-Elton-Brunetti-jpg.webp' class='img-montaria'></img>";
     } else if (montaria === "Dragão") {
-        infoPersonagem.innerHTML += "<p>Dragão - Velocidade: 8m/s, Tempo para descanso: 10 minutos</p>" + "<img src='https://pm1.aminoapps.com/6660/a8e81aedd74df32e19e00821c4dc59b068b252f9_hq.jpg' class='img-result'></img>";
+        infoPersonagem.innerHTML += "<p>Dragão - Velocidade: 8m/s, Tempo para descanso: 10 minutos</p>" + "<img src='https://pm1.aminoapps.com/6660/a8e81aedd74df32e19e00821c4dc59b068b252f9_hq.jpg' class='img-montaria'></img>";
     } else if (montaria === "Pantera") {
-        infoPersonagem.innerHTML += "<p>Pantera - Velocidade: 6m/s, Tempo para descanso: 8 minutos</p>" + "<img src='https://static.vecteezy.com/system/resources/previews/024/705/088/non_2x/panther-with-ai-generated-free-png.png' class='img-result'></img>";
+        infoPersonagem.innerHTML += "<p>Pantera - Velocidade: 6m/s, Tempo para descanso: 8 minutos</p>" + "<img src='https://static.vecteezy.com/system/resources/previews/024/705/088/non_2x/panther-with-ai-generated-free-png.png' class='img-montaria'></img>";
     } else if (montaria === "Lobo") {
-        infoPersonagem.innerHTML += "<p>Lobo - Velocidade: 5m/s, Tempo para descanso: 6 minutos</p>" + "<img src='https://static.todamateria.com.br/upload/lo/bo/lobo-og.jpg?class=ogImageWide' class='img-result'></img>";
+        infoPersonagem.innerHTML += "<p>Lobo - Velocidade: 5m/s, Tempo para descanso: 6 minutos</p>" + "<img src='https://static.todamateria.com.br/upload/lo/bo/lobo-og.jpg?class=ogImageWide' class='img-montaria'></img>";
     }
     
     document.getElementById('iniciarJogo').style.display = 'block';
 }
 
 function iniciarJogo() {
-    // botão para iniciar o jogo...
     alert("O jogo será iniciado!");
 }

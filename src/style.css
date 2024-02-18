@@ -30,7 +30,15 @@ body {
     font-weight: bold;
 }
 
-
-.img-result{
+.img-montaria{
     width: 300px;
 }
+
+@media screen and (max-width: 480px) {
+    .container {
+      max-width: 80%;
+    }
+    .cabecalho{
+        max-width: 80%;
+    }
+  }
