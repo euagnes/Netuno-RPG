@@ -118,28 +118,28 @@ function mostrarInformacoesPersonagem()  {
                                "<h3>Atributos da classe e montaria:</h3>"                                                      
     // Informações específicas de cada classe
     if (classe === "Paladino") {
-        infoPersonagem.innerHTML += "<p>Paladino - Vida: 85, Mana: 35, Velocidade de Ataque: 1.25</p>" + "<img src='https://cdn.pixabay.com/photo/2023/08/27/22/24/paladin-8217999_1280.png' class='img-result'></img>";
+        infoPersonagem.innerHTML += "<p>Paladino - Vida: 85, Mana: 35, Velocidade de Ataque: 1.25</p>";
     } else if (classe === "Atirador") {
-        infoPersonagem.innerHTML += "<p>Atirador - Vida: 70, Velocidade: 1.5, Precisão: 85%</p>" + "<img src='https://cdn.pixabay.com/photo/2023/08/27/22/24/paladin-8217999_1280.png' class='img-result'></img>";
+        infoPersonagem.innerHTML += "<p>Atirador - Vida: 70, Velocidade: 1.5, Precisão: 85%</p>";
     } else if (classe === "Guerreiro") {
-        infoPersonagem.innerHTML += "<p>Guerreiro - Vida: 90, Resistência: 80, Força: 95</p>" + "<img src='https://cdn.pixabay.com/photo/2023/08/27/22/24/paladin-8217999_1280.png' class='img-result'></img>";
+        infoPersonagem.innerHTML += "<p>Guerreiro - Vida: 90, Resistência: 80, Força: 95</p>";
     } else if (classe === "Bárbaro") {
-        infoPersonagem.innerHTML += "<p>Bárbaro - Vida: 100, Fúria: 50, Brutalidade: 90</p>" + "<img src='https://cdn.pixabay.com/photo/2023/08/27/22/24/paladin-8217999_1280.png' class='img-result'></img>";
+        infoPersonagem.innerHTML += "<p>Bárbaro - Vida: 100, Fúria: 50, Brutalidade: 90</p>" ;
     } else if (classe === "Arqueiro") {
-        infoPersonagem.innerHTML += "<p>Arqueiro - Vida: 75, Precisão: 95%, Velocidade de Ataque: 1.75</p>" + "<img src='https://cdn.pixabay.com/photo/2023/08/27/22/24/paladin-8217999_1280.png' class='img-result'></img>";
+        infoPersonagem.innerHTML += "<p>Arqueiro - Vida: 75, Precisão: 95%, Velocidade de Ataque: 1.75</p>" + "<img src='src/img/arqueiro.jpg' class='img-result'></img>";;
     }
 
     // Informações específicas de cada montaria
     if (montaria === "Panda") {
-        infoPersonagem.innerHTML += "<p>Panda - Velocidade: 3m/s, Tempo para descanso: 5 minutos</p>" + "<img src='https://cdn.pixabay.com/photo/2023/08/27/22/24/paladin-8217999_1280.png' class='img-result'></img>";
+        infoPersonagem.innerHTML += "<p>Panda - Velocidade: 3m/s, Tempo para descanso: 5 minutos</p>" + "<img src='https://www.georgetown.edu/wp-content/uploads/2023/11/DSC_7947-2000x1125.jpg' class='img-result'></img>";
     } else if (montaria === "Cavalo") {
-        infoPersonagem.innerHTML += "<p>Cavalo - Velocidade: 4m/s, Tempo para descanso: 7 minutos</p>" + "<img src='https://cdn.pixabay.com/photo/2023/08/27/22/24/paladin-8217999_1280.png' class='img-result'></img>";
+        infoPersonagem.innerHTML += "<p>Cavalo - Velocidade: 4m/s, Tempo para descanso: 7 minutos</p>" + "<img src='https://www.eltonbrunetti.com.br/wp-content/uploads/2021/04/Detalhe-2-Quadro-pintura-Cavalo-Frisio-80x100-Elton-Brunetti-jpg.webp' class='img-result'></img>";
     } else if (montaria === "Dragão") {
-        infoPersonagem.innerHTML += "<p>Dragão - Velocidade: 8m/s, Tempo para descanso: 10 minutos</p>" + "<img src='https://cdn.pixabay.com/photo/2023/08/27/22/24/paladin-8217999_1280.png' class='img-result'></img>";
+        infoPersonagem.innerHTML += "<p>Dragão - Velocidade: 8m/s, Tempo para descanso: 10 minutos</p>" + "<img src='https://pm1.aminoapps.com/6660/a8e81aedd74df32e19e00821c4dc59b068b252f9_hq.jpg' class='img-result'></img>";
     } else if (montaria === "Pantera") {
-        infoPersonagem.innerHTML += "<p>Pantera - Velocidade: 6m/s, Tempo para descanso: 8 minutos</p>" + "<img src='https://cdn.pixabay.com/photo/2023/08/27/22/24/paladin-8217999_1280.png' class='img-result'></img>";
+        infoPersonagem.innerHTML += "<p>Pantera - Velocidade: 6m/s, Tempo para descanso: 8 minutos</p>" + "<img src='https://static.vecteezy.com/system/resources/previews/024/705/088/non_2x/panther-with-ai-generated-free-png.png' class='img-result'></img>";
     } else if (montaria === "Lobo") {
-        infoPersonagem.innerHTML += "<p>Lobo - Velocidade: 5m/s, Tempo para descanso: 6 minutos</p>" + "<img src='https://cdn.pixabay.com/photo/2023/08/27/22/24/paladin-8217999_1280.png' class='img-result'></img>";
+        infoPersonagem.innerHTML += "<p>Lobo - Velocidade: 5m/s, Tempo para descanso: 6 minutos</p>" + "<img src='https://static.todamateria.com.br/upload/lo/bo/lobo-og.jpg?class=ogImageWide' class='img-result'></img>";
     }
     
     document.getElementById('iniciarJogo').style.display = 'block';
