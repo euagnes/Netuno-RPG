@@ -19,10 +19,10 @@
 
 ### Como Executar o Projeto
 
-##### Para executar o projeto, basta baixar os arquivos HTML, CSS e JavaScript e abri-los em um navegador web ou abrir o link abaixo.
+##### Para executar o projeto, basta baixar os arquivos HTML, CSS e JavaScript e abri-los em um navegador web ou abrir pelo link abaixo.
 
 
-###  LINK DO PROJETO:
+###  Jogue Warrior's:
 ### https://euagnes.github.io/Netuno-RPG/
 
 ## ScreenShot
