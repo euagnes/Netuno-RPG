@@ -27,4 +27,4 @@
 
 
 ## ScreenShot
-[![ Imagem do jogo ]( [LINK](https://i.ibb.co/gMWHr3H/Warrior-s.png)https://i.ibb.co/gMWHr3H/Warrior-s.png # Netuno-RPG)
+[![imagem do jogo](https://i.ibb.co/gMWHr3H/Warrior-s.png)
